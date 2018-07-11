@@ -3,6 +3,7 @@
 #loadkeys br-abnt2
 timedatectl set-ntp true
 
+mkfs.vfat -F /dev/sda$2
 mkfs.ext4 -F /dev/sda$1
 mount /dev/sda$1 /mnt
 mkdir /mnt/boot
