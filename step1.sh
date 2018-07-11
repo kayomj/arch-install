@@ -13,3 +13,6 @@ echo "Server = http://archlinux.c3sl.ufpr.br/\$repo/os/\$arch" > /etc/pacman.d/m
 
 pacstrap /mnt base base-devel grub-efi-x86_64 efibootmgr intel-ucode os-prober git
 genfstab -U /mnt >> /mnt/etc/fstab
+
+mount
+arch-chroot /mnt
