@@ -1,5 +1,7 @@
 #!/bin/bash
 
+arch-chroot /mnt
+
 USERNAME="safagoat"
 HOSTNAME="Safacentral"
 
