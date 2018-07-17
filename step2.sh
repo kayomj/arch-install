@@ -35,6 +35,8 @@ mkdir -p /home/$USERNAME/Pictures/Wallpapers/.others
 mkdir -p /home/$USERNAME/Videos/.others
 chown -R $USERNAME:$USERNAME /home/$USERNAME
 
+pacman -Sy grub efibootmgr
+
 grub-install --target=x86_64-efi --efi-directory=/boot/ --bootloader-id=Arch
 grub-mkconfig -o /boot/grub/grub.cfg
 
