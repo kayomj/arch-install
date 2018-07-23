@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#loadkeys br-abnt2
+loadkeys br-abnt2
 timedatectl set-ntp true
 
 mkfs.fat -F32 /dev/sda5
