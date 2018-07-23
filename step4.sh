@@ -8,9 +8,9 @@ echo "
 SigLevel = Never
 Server = http://repo.archlinux.fr/\$arch" | sudo tee -a /etc/pacman.conf
 
-sudo pacman -Sy nvidia nvidia-utils mesa xf86-video-intel bumblebee lib32-virtualgl lib32-nvidia-utils
-
-sudo usermod -aG bumblebee eder && sudo systemctl enable bumblebeed.service
+sudo pacman -Sy  mesa xf86-video-intel bumblebee lib32-virtualgl lib32-nvidia-utils
+#nvidia nvidia-utils
+sudo usermod -aG bumblebee kayo && sudo systemctl enable bumblebeed.service
 
 sudo pacman -Syu yaourt && yaourt -Syu
 
@@ -29,5 +29,5 @@ sudo usermod -aG docker $USER && sudo usermod -aG vboxusers $USER && sudo modpro
 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-yaourt -S spotify 
+#yaourt -S spotify 
 yaourt -S neofetch-git 
