@@ -1,7 +1,7 @@
 #!/bin/bash
 
-USERNAME="safagoat"
-HOSTNAME="Safacentral"
+USERNAME="kayo"
+HOSTNAME="kayo-suporte"
 
 ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 hwclock --systohc
