@@ -3,8 +3,8 @@
 loadkeys br-abnt2
 timedatectl set-ntp true
 
-mkfs.fat -F32 /dev/sda5
-mkfs.ext4 -F /dev/sda6
+mkfs.fat -F32 /dev/sda1
+mkfs.ext4 -F /dev/sda2
 mount /dev/sda6 /mnt
 mkdir /mnt/boot
 mount /dev/sda5 /mnt/boot
