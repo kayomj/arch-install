@@ -4,11 +4,6 @@ Before start the install, check if efivars are available with:
 
 ls /sys/firmware/efi
 
-cd entries/arch.conf
+step1.sh set --> particion number on variables: $1=/ $2=/boot
 
-title ArchLinux
-linux /vmlinuz-linux
-initrd /initramfs-linux.img
-options root
-
-Testing
+step2.sh --> Edit username and hostname.
